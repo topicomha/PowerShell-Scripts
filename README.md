@@ -1,2 +1,2 @@
 # PowerShell
-Collection of PawerShell scripts and commands
+Collection of PowerShell scripts and commands
