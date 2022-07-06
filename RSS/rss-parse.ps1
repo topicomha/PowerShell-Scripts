@@ -1,25 +1,37 @@
-$RssUrl = "http://feeds.hanselman.com/scotthanselman"#"https://www.usda.gov/rss/home.xml"
+#$RssUrl = ""
 
-$SaveRSSXML = "testRssFeed.xml"
+$SaveRSSXML = "youtube.xml"
 
-$SaveRSSXML
+#$SaveRSSXML
 
-Invoke-WebRequest -Uri $RssUrl -OutFile $SaveRSSXML
+#Invoke-WebRequest -Uri $RssUrl -OutFile $SaveRSSXML
 
 [xml]$Content = Get-Content $SaveRSSXML
 
-$rss = $Content.rss
-$rss 
+$Feed = $Content.feed
+$Channel = $Feed.channelId + "(" + $Feed.title + ")"
 
-$Feed = $rss.channel
+#$Feed
+$Channel
 
-ForEach ($msg in $Feed.Item) {
+[System.Collections.ArrayList]$Videos  = @{}
+ForEach ($msg in $Feed.entry) {
 
-	[PSCustomObject]@{
-		'LastUpdated' = [datetime]$msg.pubDate
-		'Description' = $msg.description
-		'Title'      = $msg.title
-		'Link'        = $msg.link
+	#$msg.group
+	$video = [PSCustomObject]@{
+		'Title'      	= $msg.title
+		'Published' 	= [datetime]$msg.published
+		'LastUpdated' 	= [datetime]$msg.updated
+		'Description' 	= $msg.group.description
+		'StarRating'    = $msg.group.community.starRating.average + "/" + $msg.group.community.starRating.count
+		'Views'    		= $msg.group.community.statistics.views
+		'Link'        	= $msg.link.href
+		'Content' 		= $msg.group.content.url
+		'Thumbnail' 	= $msg.group.thumbnail.url
 	}#EndPSCustomObject
+	$video
+	$Videos.Add($video)
 
 }#EndForEach
+
+$Videos | Export-Csv -Path "$Channel.csv"
