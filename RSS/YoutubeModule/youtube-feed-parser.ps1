@@ -73,8 +73,6 @@ Function Parse-YoutubeFeed {
 
 	BEGIN { 
         
-		$FeedURL = ""
-		$ChannelID = ""
 		$isValid = $true
 	
 		#if  ( $FeedURL -eq "" -and $ChannelID -eq "" 0 ) {
@@ -114,17 +112,19 @@ Function Parse-YoutubeFeed {
 				}
 			}
 			else {
+				if (!$PSBoundParameters.ContainsKey('FeedURL') -and $PSBoundParameters.ContainsKey('ChannelID')) {
+					$Url = "https://www.youtube.com/feeds/videos.xml?channel_id=$ChannelID"
+				}
+				else {
+					$Url = $FeedURL
+					$split = $Url.Split("=")
+					$ChannelID = $split | Select-Object -l 1
+				}
 				$SaveRSSXML = "youtube$ChannelID.xml"
-				if ($PSBoundParameters.ContainsKey('FeedURL') -and !$PSBoundParameters.ContainsKey('ChannelID')) {
-					$Url = "https://youtube.com/feed/chanelid=$ChannelID"
-				}
-				else
-				{
-				       $Url = $FeedURL
-				}
 			}
 			$SaveRSSXML 
 			$Url
+			$ChannelID
 		}
 	}
 
@@ -175,7 +175,7 @@ Function Parse-YoutubeFeed {
 
 
 #region Execution examples
-Parse-YoutubeFeed -FilePath youtube9.xml
-Parse-YoutubeFeed -ChannelID test  
-Parse-YoutubeFeed -FeedURL test  
+Parse-YoutubeFeed -FilePath youtube.xml
+Parse-YoutubeFeed -FeedURL https://www.youtube.com/feeds/videos.xml?channel_id=UC3s0BtrBJpwNDaflRSoiieQ
+Parse-YoutubeFeed -ChannelID UC3s0BtrBJpwNDaflRSoiieQ
 #endregion

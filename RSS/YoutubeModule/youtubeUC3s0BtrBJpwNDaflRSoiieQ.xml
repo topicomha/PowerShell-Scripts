@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC3s0BtrBJpwNDaflRSoiieQ"/>
+ <id>yt:channel:UC3s0BtrBJpwNDaflRSoiieQ</id>
+ <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+ <title>Hak5</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ"/>
+ <author>
+  <name>Hak5</name>
+  <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+ </author>
+ <published>2005-09-07T18:38:43+00:00</published>
+ <entry>
+  <id>yt:video:J2kTmo2Y68E</id>
+  <yt:videoId>J2kTmo2Y68E</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Live Hacking Q&amp;A with Kody Kinzie and Alex Lynd</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=J2kTmo2Y68E"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-07-05T18:11:04+00:00</published>
+  <updated>2022-07-05T18:11:08+00:00</updated>
+  <media:group>
+   <media:title>Live Hacking Q&amp;A with Kody Kinzie and Alex Lynd</media:title>
+   <media:content url="https://www.youtube.com/v/J2kTmo2Y68E?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/J2kTmo2Y68E/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Bring your best questions about hacking and security and our Security Researchers will help answer them.&#13;
+&#13;
+Check us out on our live streaming channel: https://www.youtube.com/securityfwd&#13;
+&#13;
+Thanks to our sponsor Varonis: https://www.varonis.com/</media:description>
+   <media:community>
+    <media:starRating count="5" average="5.00" min="1" max="5"/>
+    <media:statistics views="0"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:yy1APcZDnEw</id>
+  <yt:videoId>yy1APcZDnEw</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Rugged Tactical WiFi Pineapple Mk7</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=yy1APcZDnEw"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-07-04T17:00:37+00:00</published>
+  <updated>2022-07-04T19:40:05+00:00</updated>
+  <media:group>
+   <media:title>Rugged Tactical WiFi Pineapple Mk7</media:title>
+   <media:content url="https://www.youtube.com/v/yy1APcZDnEw?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/yy1APcZDnEw/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Glytch is back with a new series, building a Rugged Tactical Pineapple Mk7 with LTE, GPS, Solar, oh my! This time on Hak5
+
+Original Solar Suitcase Pineapple Video: https://www.youtube.com/watch?v=VklxdIfTR3s
+
+Products used in this video: 
+Hak5 Pineapple Mk7: https://shop.hak5.org/products/wifi-pineapple
+5Ghz AC Module: https://shop.hak5.org/products/mk7ac-wifi-adapter
+Hard Case: https://amzn.to/3QYH6IC
+RP-SMA Extensions: https://amzn.to/3NAxJMn
+Battery: https://amzn.to/3OGnsQc
+Solar Panel: https://amzn.to/3y4IznX
+USB C Power Passthroughs: https://amzn.to/3I7y9IJ
+LTE Module: https://amzn.to/3nxpuGh
+
+As an Amazon Associate, creators of this content may earn commission from qualifying purchases using the above links at no additional cost to you. 
+
+
+
+Hak5 -- Cyber Security Education, Inspiration, News &amp; Community since 2005:
+
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="697" average="5.00" min="1" max="5"/>
+    <media:statistics views="12204"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:dUlaqIlhRsU</id>
+  <yt:videoId>dUlaqIlhRsU</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Grabbing Windows Wi-Fi Passwords with the O.MG Cable | HakByte</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=dUlaqIlhRsU"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-07-02T00:22:45+00:00</published>
+  <updated>2022-07-02T21:52:21+00:00</updated>
+  <media:group>
+   <media:title>Grabbing Windows Wi-Fi Passwords with the O.MG Cable | HakByte</media:title>
+   <media:content url="https://www.youtube.com/v/dUlaqIlhRsU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/dUlaqIlhRsU/hqdefault.jpg" width="480" height="360"/>
+   <media:description>In this episode, we take advantage of a Windows feature to dump the Wi-Fi credentials saved on an unlocked Windows machine. And automate the process with O.MG cable so that any Windows device plugged into the cable will send its saved Wi-Fi credentials to our own server.
+
+OMG Setup video: https://youtu.be/UJmYrZliVN4
+
+Payload: https://github.com/hak5/omg-payloads/blob/master/payloads/library/credentials/wifigrabber/payload.txt
+
+Chapters:
+0:00 Intro
+1:46 Finding the Payload
+2:35 How this payload Works
+3:45 Setup a Webhook
+4:35 Fixing some Typos
+5:48 Hiding the CMD Window 
+8:52 Retrieving the Passwords
+10:07 Closing Thoughts
+
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="391" average="5.00" min="1" max="5"/>
+    <media:statistics views="7993"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:kHa3AwfJKqo</id>
+  <yt:videoId>kHa3AwfJKqo</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Live Hacking Q&amp;A with Kody Kinzie and Nick Godshaw</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=kHa3AwfJKqo"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-30T00:04:57+00:00</published>
+  <updated>2022-07-03T22:42:46+00:00</updated>
+  <media:group>
+   <media:title>Live Hacking Q&amp;A with Kody Kinzie and Nick Godshaw</media:title>
+   <media:content url="https://www.youtube.com/v/kHa3AwfJKqo?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/kHa3AwfJKqo/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Bring your best questions about hacking and security and our Security Researchers will help answer them.&#13;
+&#13;
+Check us out on our live streaming channel: https://www.youtube.com/securityfwd&#13;
+&#13;
+Thanks to our sponsor Varonis: https://www.varonis.com/</media:description>
+   <media:community>
+    <media:starRating count="138" average="5.00" min="1" max="5"/>
+    <media:statistics views="2798"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:j38fF4pj7Bw</id>
+  <yt:videoId>j38fF4pj7Bw</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Abortion Rights are Privacy Rights - ThreatWire</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=j38fF4pj7Bw"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-28T22:27:46+00:00</published>
+  <updated>2022-07-01T15:44:24+00:00</updated>
+  <media:group>
+   <media:title>Abortion Rights are Privacy Rights - ThreatWire</media:title>
+   <media:content url="https://www.youtube.com/v/j38fF4pj7Bw?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/j38fF4pj7Bw/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Abortion Rights are Privacy Rights #threatwire #hak5
+
+Weekly security and privacy news, brought to you by Shannon Morse. ThreatWire is a weekly news journalism show covering cybersecurity topics for network admins, information security professionals, and consumers.
+ 
+Watch this on youtube (video may be “private” until the scheduled publish time): https://youtu.be/j38fF4pj7Bw
+
+ThreatWire Totem Board - Limited Edition! - https://snubsie.com/threatwire-products/tw-totem 
+
+Shop ThreatWire Merch on Teespring! - https://morsecode.creator-spring.com/ 
+
+Support ThreatWire!  https://www.patreon.com/threatwire 
+
+Follow Shannon on Social Media: https://snubsie.com/links 
+
+Resources:
+https://digitaldefensefund.org/ddf-artwork-zines/digital-security-for-abortion-and-pregnancy-privacy-poster
+https://www.eff.org/deeplinks/2022/05/digital-security-and-privacy-tips-those-involved-abortion-access 
+ 
+Links:
+Resources for stories are available on Patreon exclusively, due to youtube accidentally flagging some of my links as inappropriate or malicious and going against their terms of service. All links included in my videos are news articles or sources related to each story and are both appropriate for the discussion and legitimate. Access source links at https://www.patreon.com/threatwire  
+
+
+
+Hak5 -- Cyber Security Education, Inspiration, News &amp; Community since 2005:
+
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="1644" average="5.00" min="1" max="5"/>
+    <media:statistics views="13916"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:UJmYrZliVN4</id>
+  <yt:videoId>UJmYrZliVN4</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Create Your First O.MG Payload ft. MG</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=UJmYrZliVN4"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-25T16:30:09+00:00</published>
+  <updated>2022-07-03T18:28:36+00:00</updated>
+  <media:group>
+   <media:title>Create Your First O.MG Payload ft. MG</media:title>
+   <media:content url="https://www.youtube.com/v/UJmYrZliVN4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/UJmYrZliVN4/hqdefault.jpg" width="480" height="360"/>
+   <media:description>In this episode, we look at a cable capable of hacking any device it's plugged into. We'll go over everything you should consider when buying an OMG cable and then go over the basics of ducky script and writing your first payload!
+
+Links:
+Buy O.MG Gear: 
+https://hak5.org/omg
+
+O.MG Product support: 
+https://hak5.org/discord #omg-support channel
+
+Web Flasher:
+https://o-mg.github.io/WebFlasher/
+
+Flasher Drivers:
+https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
+
+Chapters:
+0:00 Intro 
+1:03 What is an OMG Cable
+2:20 Choosing the right Cable
+3:35 Web Flasher
+6:30 Web Interface
+7:55 Crafting a Payload
+10:40 Closing thoughts
+
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="409" average="5.00" min="1" max="5"/>
+    <media:statistics views="7990"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:GPxowFXtYig</id>
+  <yt:videoId>GPxowFXtYig</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Live Hacking Q&amp;A with Kody Kinzie and Alex Lynd</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=GPxowFXtYig"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-23T00:29:49+00:00</published>
+  <updated>2022-06-23T15:34:52+00:00</updated>
+  <media:group>
+   <media:title>Live Hacking Q&amp;A with Kody Kinzie and Alex Lynd</media:title>
+   <media:content url="https://www.youtube.com/v/GPxowFXtYig?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/GPxowFXtYig/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Bring your best questions about hacking and security and our Security Researchers will help answer them.&#13;
+&#13;
+Check us out on our live streaming channel: https://www.youtube.com/securityfwd&#13;
+&#13;
+Thanks to our sponsor Varonis: https://www.varonis.com/</media:description>
+   <media:community>
+    <media:starRating count="138" average="5.00" min="1" max="5"/>
+    <media:statistics views="3587"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:oAVlfs-LGQs</id>
+  <yt:videoId>oAVlfs-LGQs</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Another Record Breaking DDoS Attack; Stealing Crypto Keys from AMD and Intel CPUs - ThreatWire</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=oAVlfs-LGQs"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-21T19:39:03+00:00</published>
+  <updated>2022-06-22T02:40:51+00:00</updated>
+  <media:group>
+   <media:title>Another Record Breaking DDoS Attack; Stealing Crypto Keys from AMD and Intel CPUs - ThreatWire</media:title>
+   <media:content url="https://www.youtube.com/v/oAVlfs-LGQs?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/oAVlfs-LGQs/hqdefault.jpg" width="480" height="360"/>
+   <media:description>A NEW record breaking DDoS attack, a magical packet attack for Linux, Stealing cryptographic keys from AMD and Intel CPUs! All that coming up now on ThreatWire. #threatwire #hak5
+
+Weekly security and privacy news, brought to you by Shannon Morse. ThreatWire is a weekly news journalism show covering cybersecurity topics for network admins, information security professionals, and consumers.
+ 
+Watch this on youtube (video may be “private” until the scheduled publish time): https://youtu.be/oAVlfs-LGQs
+
+ThreatWire Totem Board - Limited Edition! - https://snubsie.com/threatwire-products/tw-totem 
+
+Shop ThreatWire Merch on Teespring! - https://morsecode.creator-spring.com/ 
+
+Support ThreatWire!  https://www.patreon.com/threatwire 
+
+Follow Shannon on Social Media: https://snubsie.com/links 
+
+Chapters:
+0:00 NEW Record Breaking DDoS Attack
+3:03 Magic Packet Linux Attack
+5:45 Stealing Crypto Keys
+
+
+Links:
+Resources for stories are available on Patreon exclusively, due to youtube accidentally flagging some of my links as inappropriate or malicious and going against their terms of service. All links included in my videos are news articles or sources related to each story and are both appropriate for the discussion and legitimate. Access source links at https://www.patreon.com/threatwire  
+
+
+
+Hak5 -- Cyber Security Education, Inspiration, News &amp; Community since 2005:
+
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="1110" average="5.00" min="1" max="5"/>
+    <media:statistics views="17621"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:KmJDwi1BeIc</id>
+  <yt:videoId>KmJDwi1BeIc</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Configuring and Flying Our DIY 3D Printed Drone - Finale</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=KmJDwi1BeIc"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-20T17:00:09+00:00</published>
+  <updated>2022-06-20T17:00:10+00:00</updated>
+  <media:group>
+   <media:title>Configuring and Flying Our DIY 3D Printed Drone - Finale</media:title>
+   <media:content url="https://www.youtube.com/v/KmJDwi1BeIc?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/KmJDwi1BeIc/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Glytch is back with the finale of the DIY 3D Printed drone series. Configuring and flying it, this time on Hak5! 
+
+
+Hak5 -- Cyber Security Education, Inspiration, News &amp; Community since 2005:
+
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="296" average="5.00" min="1" max="5"/>
+    <media:statistics views="6662"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:a5_7CVAt3XA</id>
+  <yt:videoId>a5_7CVAt3XA</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Live Hacking Q&amp;A with Kody Kinzie and Alex Lynd</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=a5_7CVAt3XA"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-15T23:57:07+00:00</published>
+  <updated>2022-06-23T22:47:59+00:00</updated>
+  <media:group>
+   <media:title>Live Hacking Q&amp;A with Kody Kinzie and Alex Lynd</media:title>
+   <media:content url="https://www.youtube.com/v/a5_7CVAt3XA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/a5_7CVAt3XA/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Bring your best questions about hacking and security and our Security Researchers will help answer them.&#13;
+&#13;
+Check us out on our live streaming channel: https://www.youtube.com/securityfwd&#13;
+&#13;
+Thanks to our sponsor Varonis: https://www.varonis.com/</media:description>
+   <media:community>
+    <media:starRating count="126" average="5.00" min="1" max="5"/>
+    <media:statistics views="3768"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:irTfP6j5e8w</id>
+  <yt:videoId>irTfP6j5e8w</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Hacking Apple’s M1 Chipsets, Who Hacked The Telcos? - ThreatWire</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=irTfP6j5e8w"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-14T23:52:28+00:00</published>
+  <updated>2022-06-18T05:14:23+00:00</updated>
+  <media:group>
+   <media:title>Hacking Apple’s M1 Chipsets, Who Hacked The Telcos? - ThreatWire</media:title>
+   <media:content url="https://www.youtube.com/v/irTfP6j5e8w?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/irTfP6j5e8w/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Bluetooth and WiFi still deliver on hacks, PACMAN attacks M1 Chips, and somebody hacked telcos! All that coming up now on ThreatWire. #threatwire #hak5
+
+Weekly security and privacy news, brought to you by Shannon Morse. ThreatWire is a weekly news journalism show covering cybersecurity topics for network admins, information security professionals, and consumers.
+ 
+Watch this on youtube (video may be “private” until the scheduled publish time): https://youtu.be/irTfP6j5e8w
+
+ThreatWire Totem Board - Limited Edition! - https://snubsie.com/threatwire-products/tw-totem 
+
+Shop ThreatWire Merch on Teespring! - https://morsecode.creator-spring.com/ 
+
+Support ThreatWire!  https://www.patreon.com/threatwire 
+
+Follow Shannon on Social Media: https://snubsie.com/links 
+
+Chapters:
+0:00 Bluetooth and WiFi Exploits
+04:40 PACMAN vs M1
+06:34 Who’s Hackin’ Telcos?
+
+Links:
+Resources for stories are available on Patreon exclusively, due to youtube accidentally flagging some of my links as inappropriate or malicious and going against their terms of service. All links included in my videos are news articles or sources related to each story and are both appropriate for the discussion and legitimate. Access source links at https://www.patreon.com/threatwire  
+
+
+Hak5 -- Cyber Security Education, Inspiration, News &amp; Community since 2005:
+
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="1112" average="5.00" min="1" max="5"/>
+    <media:statistics views="17350"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:vlR4G0jjHmg</id>
+  <yt:videoId>vlR4G0jjHmg</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>FluBot Android Banking Malware Shutdown - ThreatWire</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=vlR4G0jjHmg"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-07T23:29:16+00:00</published>
+  <updated>2022-06-08T18:04:46+00:00</updated>
+  <media:group>
+   <media:title>FluBot Android Banking Malware Shutdown - ThreatWire</media:title>
+   <media:content url="https://www.youtube.com/v/vlR4G0jjHmg?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/vlR4G0jjHmg/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Atlassian servers are being actively attacked, updated ASAP, Flubot was finally shutdown, and evil corp attempts to evade sanctions! All that coming up now on ThreatWire. #threatwire #hak5
+
+Weekly security and privacy news, brought to you by Shannon Morse. ThreatWire is a weekly news journalism show covering cybersecurity topics for network admins, information security professionals, and consumers.
+ 
+Watch this on youtube (video may be “private” until the scheduled publish time): https://youtu.be/vlR4G0jjHmg
+
+ThreatWire Totem Board - Limited Edition! - https://snubsie.com/threatwire-products/tw-totem 
+
+Shop ThreatWire Merch on Teespring! - https://morsecode.creator-spring.com/ 
+
+Support ThreatWire!  https://www.patreon.com/threatwire 
+
+Follow Shannon on Social Media: https://snubsie.com/links 
+
+Chapters:
+0:00 Servers Actively Attacked
+3:11 FluBot Shutdown By Authorities
+4:49 Evil Corp Attempts Sanction Evasion
+
+Links:
+Resources for stories are available on Patreon exclusively, due to youtube accidentally flagging some of my links as inappropriate or malicious and going against their terms of service. All links included in my videos are news articles or sources related to each story and are both appropriate for the discussion and legitimate. Access source links at https://www.patreon.com/threatwire  
+
+
+Hak5 -- Cyber Security Education, Inspiration, News &amp; Community since 2005:
+
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="905" average="5.00" min="1" max="5"/>
+    <media:statistics views="15285"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:33H0ILk-yd8</id>
+  <yt:videoId>33H0ILk-yd8</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>How Hackers Use DNS Spoofing to Phish Passwords (WiFi Pineapple Demo)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=33H0ILk-yd8"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-03T19:20:14+00:00</published>
+  <updated>2022-06-05T07:47:09+00:00</updated>
+  <media:group>
+   <media:title>How Hackers Use DNS Spoofing to Phish Passwords (WiFi Pineapple Demo)</media:title>
+   <media:content url="https://www.youtube.com/v/33H0ILk-yd8?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/33H0ILk-yd8/hqdefault.jpg" width="480" height="360"/>
+   <media:description>@Alex Lynd demonstrates how DNS Spoofing &amp; DNS Cache Poisoning can be used to phish your online passwords.  This demo uses a WiFi Pineapple to create a Rogue Access Point that can intercept &amp; modify WiFi traffic. 
+This video is sponsored by PCBWay:  https://www.pcbway.com 
+Hak5 -- Cyber Security Education, Inspiration, News &amp; Community since 2005
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Buy a Nugget &amp; Support the Show: https://hakcat.com
+Buy a WiFi Pineapple: https://shop.hak5.org/products/wifi-pineapple
+
+Pineapple Rogue AP / Mitm: https://youtu.be/fOmDNn2aXXA
+Nginx Setup Video: https://youtu.be/CBaiRVKRfuM
+Pineapple Setup Guide: https://docs.hak5.org/wifi-pineapple
+Phishing Page Demo: https://gist.github.com/AlexLynd/7fcced41f9a998dea72010ed2f73e679
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Alex's Twitter: https://twitter.com/AlexLyndAlex's Website: http://alexlynd.comAlex's GitHub: https://github.com/AlexLynd
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Chapters:
+
+Intro @AlexLynd 00:00
+What is DNS? 00:19
+DNS Cache Poisoning 00:54
+DNS Attack Overview 01:18
+Tools You'll Need 01:37
+PCBWay Ad 01:43
+Pineapple Setup 01:57
+Rogue AP  Overview 02:16
+Modifying DNS Records 03:33
+Clear DNS Cache 05:42
+Disclaimer and Overview 05:57
+Setting up a Webserver 06:28
+Phishing Page Overview 07:25
+Attack Demo 07:50
+Mitigating Attacks 08:27
+Outro 08:46
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="853" average="5.00" min="1" max="5"/>
+    <media:statistics views="18238"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:HpX7jsW6uww</id>
+  <yt:videoId>HpX7jsW6uww</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Live Hacking Q&amp;A with Kody Kinzie and Alex Lynd</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=HpX7jsW6uww"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-06-02T00:08:48+00:00</published>
+  <updated>2022-06-02T22:46:52+00:00</updated>
+  <media:group>
+   <media:title>Live Hacking Q&amp;A with Kody Kinzie and Alex Lynd</media:title>
+   <media:content url="https://www.youtube.com/v/HpX7jsW6uww?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/HpX7jsW6uww/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Bring your best questions about hacking and security and our Security Researchers will help answer them.&#13;
+&#13;
+Check us out on our live streaming channel: https://www.youtube.com/securityfwd&#13;
+&#13;
+Thanks to our sponsor Varonis: https://www.varonis.com/</media:description>
+   <media:community>
+    <media:starRating count="156" average="5.00" min="1" max="5"/>
+    <media:statistics views="3749"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:HMmcaW4Nh9M</id>
+  <yt:videoId>HMmcaW4Nh9M</yt:videoId>
+  <yt:channelId>UC3s0BtrBJpwNDaflRSoiieQ</yt:channelId>
+  <title>Assembling and Soldering Our DIY 3D Printed Drone</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=HMmcaW4Nh9M"/>
+  <author>
+   <name>Hak5</name>
+   <uri>https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ</uri>
+  </author>
+  <published>2022-05-30T18:00:08+00:00</published>
+  <updated>2022-05-30T18:00:10+00:00</updated>
+  <media:group>
+   <media:title>Assembling and Soldering Our DIY 3D Printed Drone</media:title>
+   <media:content url="https://www.youtube.com/v/HMmcaW4Nh9M?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/HMmcaW4Nh9M/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Glytch is back again with the second to last installment of the DIY 3D Printed FPV drone series! Assembling and soldering tips, this time on Hak5! 
+
+Equipment used in this series: 
+Budget Ground Gear:
+FS-i6 Controller: https://amzn.to/3HYja3A
+FS Receiver: https://amzn.to/3E3oRuw
+Box Goggles: https://amzn.to/3p3Pzgl
+
+Preferred Ground Gear: 
+TBS Tango II: https://www.team-blacksheep.com/produ...
+Crossfire Receiver: https://amzn.to/3E77hGk
+FlySight Goggles: https://amzn.to/3D32hRs
+FPV Receiver Module for Goggles: https://amzn.to/3lAhL9Z
+
+Drone Parts: 
+Zeus AIO: https://amzn.to/3CYWpso
+Zeus FPV Transmitter: https://amzn.to/3xuLiX0
+Caddx Ant: https://amzn.to/3cUTwyw
+Motors: https://amzn.to/3cRwCYK
+Props: https://amzn.to/3G4LOhs
+
+As an Amazon Associate, the creator of this content earns from qualifying purchases through the above links, at no extra cost to you.
+Hak5 -- Cyber Security Education, Inspiration, News &amp; Community since 2005:
+
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+Our Site → https://www.hak5.org
+Shop →  http://hakshop.myshopify.com/
+Subscribe → https://www.youtube.com/user/Hak5Darren?sub_confirmation=1
+Support → https://www.patreon.com/threatwire
+Contact Us → http://www.twitter.com/hak5
+-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆-----☆
+
+____________________________________________
+Founded in 2005, Hak5's mission is to advance the InfoSec industry. We do this through our award winning educational podcasts, leading pentest gear, and inclusive community – where all hackers belong.</media:description>
+   <media:community>
+    <media:starRating count="323" average="5.00" min="1" max="5"/>
+    <media:statistics views="6888"/>
+   </media:community>
+  </media:group>
+ </entry>
+</feed>
