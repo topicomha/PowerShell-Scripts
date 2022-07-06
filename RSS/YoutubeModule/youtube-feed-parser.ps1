@@ -118,11 +118,13 @@ Function Parse-YoutubeFeed {
 				if ($PSBoundParameters.ContainsKey('FeedURL') -and !$PSBoundParameters.ContainsKey('ChannelID')) {
 					$Url = "https://youtube.com/feed/chanelid=$ChannelID"
 				}
-				$Url = $FeedURL
-		
+				else
+				{
+				       $Url = $FeedURL
+				}
 			}
 			$SaveRSSXML 
-			#$Url
+			$Url
 		}
 	}
 
