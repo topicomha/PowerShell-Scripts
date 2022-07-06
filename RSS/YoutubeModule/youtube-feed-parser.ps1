@@ -74,29 +74,6 @@ Function Parse-YoutubeFeed {
 	BEGIN { 
         
 		$isValid = $true
-	
-		#if  ( $FeedURL -eq "" -and $ChannelID -eq "" 0 ) {
-		# $HasFeedURL = $PSBoundParameters.ContainsKey('FeedURL')
-		# $HasChannelID = $PSBoundParameters.ContainsKey('ChannelID')
-		# $HasFilePath = $PSBoundParameters.ContainsKey('FilePath')
-		
-		# $HasAll = $HasFilePath -and $HasChannelID -and $HasFilePath
-		# $HasNone = !$HasFilePath -and !$HasChannelID -and !$HasFilePath
-		# $HasAny = !$HasFilePath -or !$HasChannelID -or !$HasFilePath
-
-		# $HasFeedURL
-		# $HasChannelID
-		# $HasFilePath
-		# $HasAll
-		# $HasNone
-		# $HasAny
-
-
-		# $FeedURL
-		# $ChannelID
-		# $FilePath
-
-
 		if (!$PSBoundParameters.ContainsKey('FeedURL') -and !$PSBoundParameters.ContainsKey('ChannelID') -and !$PSBoundParameters.ContainsKey('FilePath')) {
 			Write-Error "A Url, ChannelID, or a FilePath is required"
 			$isValid = $false
@@ -122,16 +99,15 @@ Function Parse-YoutubeFeed {
 				}
 				$SaveRSSXML = "youtube$ChannelID.xml"
 			}
-			$SaveRSSXML 
-			$Url
-			$ChannelID
+			#$SaveRSSXML 
+			#$Url
+			#$ChannelID
 		}
 	}
 
 	PROCESS {
 
 		if ($isValid) {
-
 		
 			if ($Url) {
 				Invoke-WebRequest -Uri $Url -OutFile $SaveRSSXML
@@ -142,11 +118,10 @@ Function Parse-YoutubeFeed {
 			$Channel = $Feed.channelId + "(" + $Feed.title + ")"
 		
 			#$Feed
-			$Channel
+			#$Channel
 		
 			[System.Collections.ArrayList]$Videos = @{}
 			ForEach ($msg in $Feed.entry) {
-			
 				#$msg.group
 				$video = [PSCustomObject]@{
 					'Title'       = $msg.title
@@ -159,12 +134,11 @@ Function Parse-YoutubeFeed {
 					'Content'     = $msg.group.content.url
 					'Thumbnail'   = $msg.group.thumbnail.url
 				}#EndPSCustomObject
-				$video
-				$Videos.Add($video)
-
+				#$video
+				$currentIndex = $Videos.Add($video)
 			}#EndForEach
 		}
-
+		Write-Output $Videos
 	}
 
 	END { 
@@ -175,7 +149,18 @@ Function Parse-YoutubeFeed {
 
 
 #region Execution examples
-Parse-YoutubeFeed -FilePath youtube.xml
-Parse-YoutubeFeed -FeedURL https://www.youtube.com/feeds/videos.xml?channel_id=UC3s0BtrBJpwNDaflRSoiieQ
-Parse-YoutubeFeed -ChannelID UC3s0BtrBJpwNDaflRSoiieQ
+#$Videos1 = Parse-YoutubeFeed -FilePath youtube.xml
+#$Videos2 = Parse-YoutubeFeed -FilePath youtubeUC3s0BtrBJpwNDaflRSoiieQ.xml 
+#$Videos3 = Parse-YoutubeFeed -FilePath youtubeUCe1IA5kmY578O_Qo7Skr-TQ.xml 
+#$Videos4 = Parse-YoutubeFeed -FilePath youtubeUCg4vDcovXPJTcTcYxQ9iCrw.xml
+#$Videos5 = Parse-YoutubeFeed -FilePath youtubeUCR0VLWitB2xM4q7tjkoJUPw.xml
+#$Videos6 = Parse-YoutubeFeed -FilePath youtubeUCtPrkXdtCM5DACLufB9jbsA.xml
+#Parse-YoutubeFeed -FeedURL https://www.youtube.com/feeds/videos.xml?channel_id=UC3s0BtrBJpwNDaflRSoiieQ
+#Parse-YoutubeFeed -ChannelID UC3s0BtrBJpwNDaflRSoiieQ
+#| Select-Object -p Title, Published, LastUpdated, StarRating, Views, Link, Content, Thumbnail, Description
 #endregion
+
+#$Videos3 | Export-Csv -path .\test.csv
+
+#$Videos1 | Export-Csv -path videos1.csv
+#$Videos2 | Export-Csv -path videos2.csv
