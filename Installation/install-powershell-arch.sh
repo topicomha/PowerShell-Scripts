@@ -3,7 +3,7 @@
 sudo pacman -Syu
 
 sudo pacman -S wget libuv 
-`
+
 mkdir powershell
 cd powershell
 
