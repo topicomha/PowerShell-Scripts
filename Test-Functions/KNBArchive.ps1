@@ -12,9 +12,9 @@ while ($currentdate -le $enddate) {
 	#$monthname+"_"+$year+"_"+$month+"_"+$date
 	
 	
-	#"http://www.kevinandbeanarchive.com/"+$monthname+"_"+$date+"_"+$year+"_no_songs_no_commercials.MP3"
-	$link = "http://www.kevinandbeanarchive.com/"+$monthname+"_"+$date+"_"+$year+"_no_songs_no_commercials.MP3"
-	invoke-WebRequest "$link" | Out-File "KevinAndBean-$year-$month-$date.MP3"
+	"http://www.kevinandbeanarchive.com/"+$monthname+"_"+$date+"_"+$year+"_no_songs_no_commercials.MP3"
+	#$link = "http://www.kevinandbeanarchive.com/"+$monthname+"_"+$date+"_"+$year+"_no_songs_no_commercials.MP3"
+	#invoke-WebRequest "$link" | Select-Object -ExpandProperty Content | Out-File "KevinAndBean-$year-$month-$date.MP3"
 
 	$currentdate = $currentdate.AddDays(1)
 }
