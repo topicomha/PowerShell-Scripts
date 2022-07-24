@@ -146,7 +146,7 @@ Function Parse-YoutubeFeed {
 	}
 }
 
-
+Export-ModuleMember -Function Parse-YoutubeFeed
 
 #region Execution examples
 #$Videos1 = Parse-YoutubeFeed -FilePath youtube.xml
