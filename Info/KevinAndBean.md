@@ -1,0 +1,16 @@
+# Kevin and Bean Archive Download
+
+Here are some help full links to the Kevin and Bean Archive that are used or can be used in the powershell scripts to download the audio.
+
+http://www.kevinandbeanarchive.com/audio.php
+
+
+http://kevinandbeanarchive.com/Kevin_and_Bean_Complete_Chronological_List_Of_All_Clips_On_The_Show_For_2016.pdf
+http://kevinandbeanarchive.com/Kevin_and_Bean_Complete_Chronological_List_Of_All_Clips_On_The_Show_For_2015.pdf
+http://kevinandbeanarchive.com/Kevin_and_Bean_Complete_Chronological_List_Of_All_Clips_On_The_Show_For_2016.pdf
+http://kevinandbeanarchive.com/Kevin_and_Bean_Complete_Chronological_List_Of_All_Clips_On_The_Show_For_2017.pdf
+http://kevinandbeanarchive.com/Kevin_and_Bean_Complete_Chronological_List_Of_All_Clips_On_The_Show_For_2018.pdf
+http://kevinandbeanarchive.com/Kevin_and_Bean_Complete_Chronological_List_Of_All_Clips_On_The_Show_For_2019.pdf
+http://kevinandbeanarchive.com/Kevin_and_Bean_Complete_Chronological_List_Of_All_Clips_On_The_Show_For_2020.pdf
+http://kevinandbeanarchive.com/Kevin_and_Bean_Complete_Chronological_List_Of_All_Clips_On_The_Show_For_2021.pdf
+http://kevinandbeanarchive.com/Kevin_and_Bean_Complete_Chronological_List_Of_All_Clips_On_The_Show_For_2022.pdf
