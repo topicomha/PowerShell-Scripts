@@ -31,4 +31,4 @@ param(
     
     $channelID
 }
-Export-ModuleMember -Function Find-YoutubeChannelID
+#Export-ModuleMember -Function Find-YoutubeChannelID
