@@ -45,7 +45,7 @@ class AirAPIEnvironment {
 			}
 			"UB-OTA" {
 				$this.AirlineCode = "UB"
-				$this.URL = "https://mobileapptest.zapways.com/v1.04.191.3/AirAPI.svc"
+				$this.URL = "https://otatest.zapways.com/v1.04.191.3/AirAPI.svc"
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1912"
 				$this.APIClientKey = "8D717A9B5808A36B0CEA4B774FB523861A"
@@ -93,6 +93,16 @@ class AirAPIEnvironment {
 				$this.DefaultCityPair = "CGP-DAC"
 				$this.UTCOffset = "+1"
 			}
+			"VQ-OTA" {
+				$this.AirlineCode = "VQ"
+				$this.URL = "https://otatest.zapways.com/airapi/v1.04/AirAPI.svc"
+				$this.SchemaVersion = "191.0"
+				$this.APIClientID = "1912"
+				$this.APIClientKey = "B3A0010F08086D112EFB98460FB10DA11D"
+				$this.APIUserKey = "iR17ei5YtDrEqbF+AQLZzO7pMj4GtIhVWMZOSASFTgs="
+				$this.DefaultCityPair = "CGP-DAC"
+				$this.UTCOffset = "+1"
+			}
 			"PA-David" {
 				$this.AirlineCode = "PA"
 				$this.URL = "http://mobile.zap/v1.04.190/AirAPI.svc"
@@ -116,6 +126,16 @@ class AirAPIEnvironment {
 			"PA-Test" {
 				$this.AirlineCode = "PA"
 				$this.URL = "https://patest.zapways.com/airapi/v1.04/AirAPI.svc"
+				$this.SchemaVersion = "191.0"
+				$this.APIClientID = "1000"
+				$this.APIClientKey = "C6470B128F1935CB7B80994E9B7C3EF113"
+				$this.APIUserKey = "IV6aLtd9G8yZSJD1QGB72RwC+28Bq+aD"
+				$this.DefaultCityPair = "ISB-KHI"
+				$this.UTCOffset = "+5"
+			}
+			"PA-Test" {
+				$this.AirlineCode = "PA"
+				$this.URL = "https://otatest.zapways.com/airapi/v1.04/AirAPI.svc"
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1000"
 				$this.APIClientKey = "C6470B128F1935CB7B80994E9B7C3EF113"
@@ -513,4 +533,6 @@ $RequestTemplate = "<Envelope
 `n</Envelope>"
 #endregion
 
-"pa-david", "ub-ota" | Get-LowFareSearchResponse | Read-LowFareSearchResponse | Compare-LowFareSearchResponse 
+Get-LowFareSearchResponse "vq-ota"
+
+#"pa-david", "ub-ota" | Get-LowFareSearchResponse | Read-LowFareSearchResponse | Compare-LowFareSearchResponse 
