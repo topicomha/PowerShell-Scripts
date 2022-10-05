@@ -1,6 +1,7 @@
 function Hide-Text {
 	param (
 		[Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName)]
+		[AllowEmptyString()]
 		[string]$Text,
 		[Parameter(Position=1)]
 		[int]$NumberOfCharacters = 5,
@@ -9,6 +10,11 @@ function Hide-Text {
 	$length = $Text.Length
 	$textArray = $Text.ToCharArray()
 	$newString = ""
+	
+	if(!($Text)){
+		return $newString
+	}
+
 	if($length -lt $NumberOfCharacters){
 		$NumberOfCharacters = $length
 	}

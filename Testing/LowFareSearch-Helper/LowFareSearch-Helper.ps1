@@ -4,12 +4,33 @@ class AirAPIEnvironment {
 	[string]$URL
 	[string]$APIClientID
 	[string]$APIClientKey
-	[string]$APIUserKey
+	[string]$Username
+	[string]$Password
+	[string]$UserKey
 	[string]$SchemaVersion
 	[string]$UTCOffset
 	[string]$DefaultCityPair
+	[string]$ClientCertificate
 
+	AirAPIEnvironment([string]$envName, [string]$envPath) {
+		$foundEnv = Get-Content $envPath | ConvertFrom-Csv | Where-Object -Property Name -eq $envName
 
+		if ($foundEnv) {
+			$this.Name = $envName
+			$this.AirlineCode = $foundEnv.AirlineCode
+			$this.URL = $foundEnv.URL
+			$this.APIClientID = $foundEnv.APIClientID
+			$this.APIClientKey = $foundEnv.APIClientKey
+			$this.Username = $foundEnv.Username
+			$this.Password = $foundEnv.Password
+			$this.UserKey = $foundEnv.UserKey
+			$this.SchemaVersion = $foundEnv.SchemaVersion
+			$this.UTCOffset = $foundEnv.UTCOffset
+			$this.DefaultCityPair = $foundEnv.DefaultCityPair
+			$this.ClientCertificate = $foundEnv.ClientCertificate
+		}
+	}
+	<#
 	AirAPIEnvironment([string]$envName)	{
 		$this.Name = $envName
 		switch ($envName) {
@@ -19,7 +40,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1901"
 				$this.APIClientKey = "CF2953C797C1F64B01633ADC29013A080A"
-				$this.APIUserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
+				$this.UserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
 				$this.DefaultCityPair = "RGN-BKK"
 				$this.UTCOffset = "-07:00"
 			}
@@ -29,7 +50,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1901"
 				$this.APIClientKey = "CF2953C797C1F64B01633ADC29013A080A"
-				$this.APIUserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
+				$this.UserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
 				$this.DefaultCityPair = "RGN-BKK"
 				$this.UTCOffset = "-07:00"
 			}
@@ -39,7 +60,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1901"
 				$this.APIClientKey = "CF2953C797C1F64B01633ADC29013A080A"
-				$this.APIUserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
+				$this.UserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
 				$this.DefaultCityPair = "RGN-BKK"
 				$this.UTCOffset = "+06:30"
 			}
@@ -49,7 +70,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1912"
 				$this.APIClientKey = "8D717A9B5808A36B0CEA4B774FB523861A"
-				$this.APIUserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
+				$this.UserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
 				$this.DefaultCityPair = "RGN-BKK"
 				$this.UTCOffset = "+06:30"
 			}
@@ -59,7 +80,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1901"
 				$this.APIClientKey = "CF2953C797C1F64B01633ADC29013A080A"
-				$this.APIUserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
+				$this.UserKey = "C9w/Q/K8kR6BU9Z7qR7d6Sn6ZCD47Uaw"
 				$this.DefaultCityPair = "RGN-BKK"
 				$this.UTCOffset = "+06:30"
 			}
@@ -69,7 +90,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1912"
 				$this.APIClientKey = "B3A0010F08086D112EFB98460FB10DA11D"
-				$this.APIUserKey = "iR17ei5YtDrEqbF+AQLZzO7pMj4GtIhVWMZOSASFTgs="
+				$this.UserKey = "iR17ei5YtDrEqbF+AQLZzO7pMj4GtIhVWMZOSASFTgs="
 				$this.DefaultCityPair = "CGP-DAC"
 				$this.UTCOffset = "-07:00"
 			}
@@ -79,7 +100,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1912"
 				$this.APIClientKey = "B3A0010F08086D112EFB98460FB10DA11D"
-				$this.APIUserKey = "iR17ei5YtDrEqbF+AQLZzO7pMj4GtIhVWMZOSASFTgs="
+				$this.UserKey = "iR17ei5YtDrEqbF+AQLZzO7pMj4GtIhVWMZOSASFTgs="
 				$this.DefaultCityPair = "CGP-DAC"
 				$this.UTCOffset = "+06:30"
 			}
@@ -89,7 +110,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1912"
 				$this.APIClientKey = "B3A0010F08086D112EFB98460FB10DA11D"
-				$this.APIUserKey = "iR17ei5YtDrEqbF+AQLZzO7pMj4GtIhVWMZOSASFTgs="
+				$this.UserKey = "iR17ei5YtDrEqbF+AQLZzO7pMj4GtIhVWMZOSASFTgs="
 				$this.DefaultCityPair = "CGP-DAC"
 				$this.UTCOffset = "+1"
 			}
@@ -99,7 +120,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1912"
 				$this.APIClientKey = "B3A0010F08086D112EFB98460FB10DA11D"
-				$this.APIUserKey = "iR17ei5YtDrEqbF+AQLZzO7pMj4GtIhVWMZOSASFTgs="
+				$this.UserKey = "iR17ei5YtDrEqbF+AQLZzO7pMj4GtIhVWMZOSASFTgs="
 				$this.DefaultCityPair = "CGP-DAC"
 				$this.UTCOffset = "+1"
 			}
@@ -109,7 +130,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1000"
 				$this.APIClientKey = "C6470B128F1935CB7B80994E9B7C3EF113"
-				$this.APIUserKey = "IV6aLtd9G8yZSJD1QGB72RwC+28Bq+aD"
+				$this.UserKey = "IV6aLtd9G8yZSJD1QGB72RwC+28Bq+aD"
 				$this.DefaultCityPair = "ISB-KHI"
 				$this.UTCOffset = "-07:00"
 			}
@@ -119,7 +140,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1000"
 				$this.APIClientKey = "C6470B128F1935CB7B80994E9B7C3EF113"
-				$this.APIUserKey = "IV6aLtd9G8yZSJD1QGB72RwC+28Bq+aD"
+				$this.UserKey = "IV6aLtd9G8yZSJD1QGB72RwC+28Bq+aD"
 				$this.DefaultCityPair = "ISB-KHI"
 				$this.UTCOffset = "+06:30"
 			}
@@ -129,7 +150,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1000"
 				$this.APIClientKey = "C6470B128F1935CB7B80994E9B7C3EF113"
-				$this.APIUserKey = "IV6aLtd9G8yZSJD1QGB72RwC+28Bq+aD"
+				$this.UserKey = "IV6aLtd9G8yZSJD1QGB72RwC+28Bq+aD"
 				$this.DefaultCityPair = "ISB-KHI"
 				$this.UTCOffset = "+5"
 			}
@@ -139,7 +160,7 @@ class AirAPIEnvironment {
 				$this.SchemaVersion = "191.0"
 				$this.APIClientID = "1000"
 				$this.APIClientKey = "C6470B128F1935CB7B80994E9B7C3EF113"
-				$this.APIUserKey = "IV6aLtd9G8yZSJD1QGB72RwC+28Bq+aD"
+				$this.UserKey = "IV6aLtd9G8yZSJD1QGB72RwC+28Bq+aD"
 				$this.DefaultCityPair = "ISB-KHI"
 				$this.UTCOffset = "+5"
 			}
@@ -150,6 +171,7 @@ class AirAPIEnvironment {
 			}
 		}
 	}
+	#>
 }
 
 function Get-LowFareSearchResponse {
@@ -166,7 +188,9 @@ function Get-LowFareSearchResponse {
 		[switch]$overrideSaveFile
 	)
 	begin {
-		$runCountFilePath = "$PSScriptRoot/runcount.txt"
+		$runCountFilePath = "$PSScriptRoot\runcount.txt"
+		$environmentsPath = "$PSScriptRoot\environments.csv"
+
 		[int]$runcount = 1
 		if (Test-Path $runCountFilePath) {
 			$runcount = Get-Content -Path $runCountFilePath
@@ -188,7 +212,7 @@ function Get-LowFareSearchResponse {
 		#endregion
 
 		#region Load Environment
-		$currentAirAPIEnvironment = [AirAPIEnvironment]::new($environment)
+		$currentAirAPIEnvironment = [AirAPIEnvironment]::new($environment, $environmentsPath)
 		
 		if (-not ($currentAirAPIEnvironment.URL)) {
 			Write-Error "Error while trying to create the Environment. Could not find URL for Environment: $($currentAirAPIEnvironment.Name)"
@@ -211,7 +235,7 @@ function Get-LowFareSearchResponse {
 		#region Build Request
 		$maskedAPIClientID = $currentAirAPIEnvironment.APIClientID | Hide-Text 2
 		$maskedAPIClientKey = $currentAirAPIEnvironment.APIClientKey | Hide-Text 15
-		$maskedAPIUserKey = $currentAirAPIEnvironment.APIUserKey | Hide-Text 15
+		$maskedUserKey = $currentAirAPIEnvironment.UserKey | Hide-Text 15
 	
 		$originDate = $baseDate.Date.AddDays($dateOffset).ToString("s")
 		$returnDate = $baseDate.AddDays($dateOffset).AddDays($dateIncrement).Date.ToString("s")
@@ -229,7 +253,7 @@ function Get-LowFareSearchResponse {
 		$request = $request -replace "{{ReturnDate}}", $returnDate
 		$request = $request -replace "{{APIClientID}}", $currentAirAPIEnvironment.APIClientID
 		$request = $request -replace "{{APIClientKey}}", $currentAirAPIEnvironment.APIClientKey
-		$request = $request -replace "{{APIUserKey}}", $currentAirAPIEnvironment.APIUserKey
+		$request = $request -replace "{{UserKey}}", $currentAirAPIEnvironment.UserKey
 		$request = $request -replace "{{OriginCode}}", $originCode
 		$request = $request -replace "{{DestinationCode}}", $destinationCode
 
@@ -237,7 +261,7 @@ function Get-LowFareSearchResponse {
 		`tSchemaVersion: $($currentAirAPIEnvironment.SchemaVersion)
 		`tAPIClientID: $maskedAPIClientID
 		`tAPIClientKey: $maskedAPIClientKey
-		`tAPIUserKey: $maskedAPIUserKey
+		`tUserKey: $maskedUserKey
 		`tOriginDate: $originDate
 		`tReturnDate: $returnDate
 		`tOriginCode: $originCode
@@ -249,11 +273,24 @@ function Get-LowFareSearchResponse {
 	
 		Write-Verbose "Getting Response"
 		try {
-			[xml]$response = Invoke-RestMethod $currentAirAPIEnvironment.URL -Method 'POST' -Headers $headers -Body $request			
+			if($currentAirAPIEnvironment.ClientCertificate)
+			{
+				$cert = Get-ChildItem -Path "cert:\CurrentUser\My\$($currentAirAPIEnvironment.ClientCertificate)"
+				[xml]$response = Invoke-WebRequest $currentAirAPIEnvironment.URL -Method 'POST' -Headers $headers -Body $request -Certificate $cert	
+			}
+			else
+			{
+				[xml]$response = Invoke-WebRequest $currentAirAPIEnvironment.URL -Method 'POST' -Headers $headers -Body $request 	
+			}
 		}
 		catch {
-			Write-Error "StatusCode:" $_.Exception.Response.StatusCode.value__ 
-			Write-Error "StatusDescription:" $_.Exception.Response.StatusDescription
+			Write-Error "Message:" $_.Exception.Message
+			if ($_.Exception.StatusCode) {
+				Write-Error "StatusCode:" $_.Exception.StatusCode.value__ 
+			}
+			if ($_.Exception.StatusDescription) {
+				Write-Error "StatusDescription:" $_.Exception.Response.StatusDescription
+			}
 			return 
 		}
 		#endregion
@@ -348,10 +385,10 @@ function Compare-LowFareSearchResponse {
 			$SecondSet = $response
 		}
 		
-		if ($FirstSet -and $SecondSet){
+		if ($FirstSet -and $SecondSet) {
 			$ProcessValid = $true
 		}
-<#
+		<#
 if (!($result)) {
 	$result = $response
 	$firstSet = $response
@@ -379,7 +416,7 @@ if (!($result)) {
 		#>
 	}
 	end {
-		if($ProcessValid){
+		if ($ProcessValid) {
 			$SameSearch = Compare-Object ($FirstSet | Select-Object -ExcludeProperty Options) ($SecondSet | Select-Object -ExcludeProperty Options)
 			if ($SameSearch) {
 				Write-Host "Search doesnt match between objects"
@@ -387,7 +424,7 @@ if (!($result)) {
 				return
 			}
 		}
-		if($ProcessValid){
+		if ($ProcessValid) {
 			$SameSearch = Compare-Object ($FirstSet | Select-Object -ExcludeProperty Flights, Fares) ($SecondSet | Select-Object -ExcludeProperty Flights, Fares)
 			if ($SameSearch) {
 				Write-Host "Search doesnt match between objects"
@@ -396,9 +433,9 @@ if (!($result)) {
 			}
 		}
 			
-		if($ProcessValid){
-			$FlightsOnlyFirst = $FirstSet.Flights | Where-Object { $SecondSet.Flights -notcontains  $_ }
-			$FlightsOnlySecond = $SecondSet.Flights | Where-Object { $FirstSet.Flights -notcontains  $_ }
+		if ($ProcessValid) {
+			$FlightsOnlyFirst = $FirstSet.Flights | Where-Object { $SecondSet.Flights -notcontains $_ }
+			$FlightsOnlySecond = $SecondSet.Flights | Where-Object { $FirstSet.Flights -notcontains $_ }
 			$result
 		}
 	}		
@@ -478,61 +515,61 @@ function Hide-Text {
 
 #region Request
 $RequestTemplate = "<Envelope
-`n    xmlns=`"http://schemas.xmlsoap.org/soap/envelope/`"
-`n    xmlns:tem=`"http://tempuri.org/`"    >
-`n    <Header/>
-`n    <Body>
-`n        <tem:LowFareSearch>
-`n            <tem:request xmlns=`"http://www.zapways.com/AirAPI/V1.04/{{SchemaVersion}}`">
-`n                <APIClientID>{{APIClientID}}</APIClientID>
-`n                <APIClientKey>{{APIClientKey}}</APIClientKey>
-`n                <EchoToken>test</EchoToken>
-`n                <Target>Test</Target>
-`n                <TimeStamp />
-`n                <Version>1.04</Version>
-`n                <APIUserKey>{{APIUserKey}}</APIUserKey>
-`n                <AgentID>test</AgentID>
-`n                <ClientAddress />
-`n                <EndUserAddress />
-`n                <OriginDestinationInformation>
-`n                    <FlightSearchOriginDestinationInformation>
-`n                        <DaysBack>0</DaysBack>
-`n                        <DaysForward>0</DaysForward>
-`n                        <DepartureDateTime>{{OriginDate}}</DepartureDateTime>
-`n                        <DestinationCode>{{DestinationCode}}</DestinationCode>
-`n                        <OriginCode>{{OriginCode}}</OriginCode>
-`n                    </FlightSearchOriginDestinationInformation>
-`n                    <!---->
-`n                    <FlightSearchOriginDestinationInformation>
-`n                        <DaysBack>0</DaysBack>
-`n                        <DaysForward>0</DaysForward>
-`n                        <DepartureDateTime>{{ReturnDate}}</DepartureDateTime>
-`n                        <DestinationCode>{{OriginCode}}</DestinationCode>
-`n                        <OriginCode>{{DestinationCode}}</OriginCode>
-`n                    </FlightSearchOriginDestinationInformation>
-`n                </OriginDestinationInformation>
-`n                <DaysBack>0</DaysBack>
-`n                <DaysForward>4</DaysForward>
-`n                <PaxTypes>
-`n                    <PaxTypeCount>
-`n                        <PaxCode>ADT</PaxCode>
-`n                        <PaxCount>1</PaxCount>
-`n                    </PaxTypeCount>
-`n                    <PaxTypeCount>
-`n                        <PaxCode>CHD</PaxCode>
-`n                        <PaxCount>0</PaxCount>
-`n                    </PaxTypeCount>
-`n                    <PaxTypeCount>
-`n                        <PaxCode>INF</PaxCode>
-`n                        <PaxCount>0</PaxCount>
-`n                    </PaxTypeCount>
-`n                </PaxTypes>
-`n            </tem:request>
-`n        </tem:LowFareSearch>
-`n    </Body>
-`n</Envelope>"
+    xmlns=`"http://schemas.xmlsoap.org/soap/envelope/`"
+    xmlns:tem=`"http://tempuri.org/`"    >
+    <Header/>
+    <Body>
+        <tem:LowFareSearch>
+            <tem:request xmlns=`"http://www.zapways.com/AirAPI/V1.04/{{SchemaVersion}}`">
+                <APIClientID>{{APIClientID}}</APIClientID>
+                <APIClientKey>{{APIClientKey}}</APIClientKey>
+                <EchoToken>test</EchoToken>
+                <Target>Test</Target>
+                <TimeStamp />
+                <Version>1.04</Version>
+                <UserKey>{{UserKey}}</UserKey>
+                <AgentID>test</AgentID>
+                <ClientAddress />
+                <EndUserAddress />
+                <OriginDestinationInformation>
+                    <FlightSearchOriginDestinationInformation>
+                        <DaysBack>0</DaysBack>
+                        <DaysForward>0</DaysForward>
+                        <DepartureDateTime>{{OriginDate}}</DepartureDateTime>
+                        <DestinationCode>{{DestinationCode}}</DestinationCode>
+                        <OriginCode>{{OriginCode}}</OriginCode>
+                    </FlightSearchOriginDestinationInformation>
+                    <!---->
+                    <FlightSearchOriginDestinationInformation>
+                        <DaysBack>0</DaysBack>
+                        <DaysForward>0</DaysForward>
+                        <DepartureDateTime>{{ReturnDate}}</DepartureDateTime>
+                        <DestinationCode>{{OriginCode}}</DestinationCode>
+                        <OriginCode>{{DestinationCode}}</OriginCode>
+                    </FlightSearchOriginDestinationInformation>
+                </OriginDestinationInformation>
+                <DaysBack>0</DaysBack>
+                <DaysForward>4</DaysForward>
+                <PaxTypes>
+                    <PaxTypeCount>
+                        <PaxCode>ADT</PaxCode>
+                        <PaxCount>1</PaxCount>
+                    </PaxTypeCount>
+                    <PaxTypeCount>
+                        <PaxCode>CHD</PaxCode>
+                        <PaxCount>0</PaxCount>
+                    </PaxTypeCount>
+                    <PaxTypeCount>
+                        <PaxCode>INF</PaxCode>
+                        <PaxCount>0</PaxCount>
+                    </PaxTypeCount>
+                </PaxTypes>
+            </tem:request>
+        </tem:LowFareSearch>
+    </Body>
+</Envelope>"
 #endregion
 
 Get-LowFareSearchResponse "vq-ota"
 
-#"pa-david", "ub-ota" | Get-LowFareSearchResponse | Read-LowFareSearchResponse | Compare-LowFareSearchResponse 
+#"pa-david", "ub-mobile" | Get-LowFareSearchResponse | Read-LowFareSearchResponse | Compare-LowFareSearchResponse 
