@@ -1,35 +1,10 @@
+Import-Module EncryptionHelper -Verbose
+
 # Define the path to the secure credentials file
 $credentialFilePath = Join-Path -Path $PSScriptRoot -ChildPath "SecureCredentials.pwsh"
 
 # Initialize the hashtable to store credentials
 $credentialsTable = @{}
-
-# Function to load the credentials table from the file (private)
-function Load-CredentialsTable {
-    [CmdletBinding()]
-    param ()
-    Write-Verbose "Loading credentials table from file: $credentialFilePath"
-    if (Test-Path -Path $credentialFilePath) {
-        Write-Verbose "Credentials file found. Reading content."
-        $encryptedContent = Get-Content -Path $credentialFilePath -Raw
-        if ($encryptedContent) {
-            Write-Verbose "Encrypted content read successfully."
-            $decryptedContent = ConvertTo-SecureString -String $encryptedContent -AsPlainText -Force
-            $jsonContent = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($decryptedContent))
-            if ($jsonContent) {
-                Write-Verbose "Decrypted content converted to JSON successfully."
-                $credentialsTable = ConvertFrom-Json -InputObject $jsonContent
-            } else {
-                Write-Verbose "Decrypted content is null or empty."
-            }
-        } else {
-            Write-Verbose "Encrypted content is null or empty."
-        }
-    } else {
-        Write-Verbose "Credentials file not found. Initializing empty credentials table."
-        $credentialsTable = @{}
-    }
-}
 
 # Function to save the credentials table to the file (private)
 function Save-CredentialsTable {
@@ -38,15 +13,10 @@ function Save-CredentialsTable {
         [string]$username
     )
     Write-Verbose "Saving credentials table to file: $credentialFilePath"
-    if ($PSCmdlet.MyInvocation.BoundParameters.ContainsKey('username')) {
-        Write-Verbose "Saving credentials for user: $username"
-        $jsonContent = $credentialsTable[$username] | ConvertTo-Json
-    } else {
-        Write-Verbose "Saving entire credentials table."
-        $jsonContent = $credentialsTable | ConvertTo-Json
-    }
+    $jsonContent = $credentialsTable | ConvertTo-Json
     if ($jsonContent) {
         Write-Verbose "JSON content generated successfully."
+        Write-Verbose "JSON content: $jsonContent"
         $secureString = ConvertTo-SecureString -String $jsonContent -AsPlainText -Force
         $encryptedContent = ConvertFrom-SecureString -SecureString $secureString
         $encryptedContent | Set-Content -Path $credentialFilePath
@@ -55,7 +25,6 @@ function Save-CredentialsTable {
         Write-Verbose "JSON content is null or empty."
     }
 }
-
 # Function to save a credential (public)
 function Save-Credentials {
     [CmdletBinding(SupportsShouldProcess=$true)]
@@ -88,6 +57,41 @@ function Save-Credentials {
     Write-Verbose "Credential for $username saved successfully."
 }
 
+
+# Function to load the credentials table from the file (private)
+function Load-CredentialsTable {
+    [CmdletBinding()]
+    param ()
+    Write-Verbose "Loading credentials table from file: $credentialFilePath"
+    if (Test-Path -Path $credentialFilePath) {
+        Write-Verbose "Credentials file found. Reading content."
+        $encryptedContent = Get-Content -Path $credentialFilePath -Raw
+        Write-Verbose "Encrypted content: $encryptedContent"
+        if ($encryptedContent) {
+            Write-Verbose "Encrypted content read successfully."
+            try {
+                $secureString = ConvertTo-SecureString -String $encryptedContent -Force
+                Write-Verbose "SecureString content: $secureString"
+                $jsonContent = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureString))
+                if ($jsonContent) {
+                    Write-Verbose "Decrypted content converted to JSON successfully."
+                    Write-Verbose "Decrypted content: $jsonContent"
+                    $credentialsTable = ConvertFrom-Json -InputObject $jsonContent
+                    Write-Verbose "Credentials table loaded successfully. $credentialsTable"
+                } else {
+                    Write-Verbose "Decrypted content is null or empty."
+                }
+            } catch {
+                Write-Error "Failed to decrypt and convert content to JSON: $_"
+            }
+        } else {
+            Write-Verbose "Encrypted content is null or empty."
+        }
+    } else {
+        Write-Verbose "Credentials file not found. Initializing empty credentials table."
+        $credentialsTable = @{}
+    }
+}
 # Function to load a credential (private)
 function Load-Credentials {
     [CmdletBinding()]
@@ -105,6 +109,7 @@ function Load-Credentials {
     }
 }
 
+
 # Function to get a credential, prompting the user if it doesn't exist (public)
 function Get-Credentials {
     [CmdletBinding()]
@@ -120,10 +125,11 @@ function Get-Credentials {
     return Load-Credentials -username $username
 }
 
+
 # Load the credentials table when the module is imported (private)
 Write-Verbose "Importing CredentialsHelper module."
 Load-CredentialsTable
 
 # Export only the public functions
-Export-ModuleMember -Function Save-Credentials, Get-Credentials
+Export-ModuleMember -Function Save-Credentials, Get-Credentials, Save-CredentialsTable, Save-Credentials, Load-CredentialsTable, Load-Credentials, Save-EncryptedJson, Read-EncryptedJson
 Write-Verbose "CredentialsHelper module imported successfully."
